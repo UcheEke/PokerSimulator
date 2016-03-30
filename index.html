@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>JS Poker Simulator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Poker Simulator</h1>
+            <!-- User Input -->
+            <form class="form" onsubmit="pokerSimulation();return false;">
+                <div class="form-group">
+                    <label class="sr-only" for="numHands">Number of Hands</label>
+                    <div class="input-group numHands">
+                        <input type="text" class="form-control" id="numHands" placeholder="Number of Hands">
+                        <div class="input-group-addon">hands</div>
+                    </div>
+                </div>
+
+                <div class="form-group-sm">
+                    <label class="control-label">Display Hands: </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkRoyal" value="printout"> Royal Flush
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkSFlush" value="printout"> Str. Flush
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkFour" value="printout"> Four OAK
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkFHouse" value="printout"> Full House
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkFlush" value="printout"> Flush
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkStr" value="printout"> Straight
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chk3" value="printout"> Three OAK
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chk2Pair" value="printout"> Two Pair
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkPair" value="printout"> Pair
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="chkHigh" value="printout"> High Card
+                    </label>
+                </div>
+
+                <button id="btnRunSim" type="submit" class="btn btn-primary">Run Simulation</button>
+            </form>
+        </div>
+
+        <div id="cards">
+        </div>
+        <div id="freqTable">
+        </div>
+    </div>
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/pokersim.js"></script>
+</body>
+</html>

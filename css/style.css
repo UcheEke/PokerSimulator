@@ -1,0 +1,49 @@
+.card
+{
+    position: relative;
+    width: 85px;
+    height: 108px;
+    padding: 2px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.numHands {
+    width: 50%;
+}
+
+.Spades {
+    background-image: url("../img/Spades.png");
+}
+
+.Clubs {
+    background-image: url("../img/Clubs.png");
+}
+
+.Diamonds {
+    background-image: url("../img/Diamonds.png");
+}
+
+.Hearts {
+    background-image: url("../img/Hearts.png");
+}
+
+.hand
+{
+    padding: 5px;
+}
+
+.jumbotron {
+    padding-top: 10%;
+    background-color: #000000;
+    color: #ffffff;
+    background-image: url("../img/pokerbg.jpg");
+    background-repeat: no-repeat;
+    background-position: 650px -5px;
+    background-size: 40%;
+}
+
+
+
+
+
