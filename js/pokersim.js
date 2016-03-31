@@ -389,12 +389,10 @@ var pokerSimulation = function(){
             deck = fullDeck;
             shuffleDeck();
         }
-        while (deck.length > 2) {
-            var hand = generateHand();
-            hand.sort(compare);
-            classifyHand(hand);
-            numHands++;
-        }
+        var hand = generateHand();
+        hand.sort(compare);
+        classifyHand(hand);
+        numHands++;
     }
 
     displayFrequencies(numHands);
